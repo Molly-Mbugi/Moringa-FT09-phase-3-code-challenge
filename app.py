@@ -65,6 +65,30 @@ def main():
     print("\nArticles:")
     for article in articles:
         print(Article(article["id"], article["title"], article["content"], article["author_id"], article["magazine_id"]))
+# Create an instance of the Article class
+article = Article(1, "Sample Title", "Sample content", 1, 1)
+
+# Printing the representation of the Article instance
+print(article) 
+
+def main():
+    # Initialize the database and create tables
+    create_tables()
+
+    # Collect user input or create articles programmatically
+    article = Article(id=1, title="Sample Title", content="Sample content", author_id=1, magazine_id=1)
+    article.save()
+
+    # Display the article before deletion
+    print("Article before deletion:")
+    print(article)
+
+    # Delete the article
+    article.delete()
+    print(f"Article with ID {article.id} has been deleted.")
+
+ 
+
 
 if __name__ == "__main__":
     main()

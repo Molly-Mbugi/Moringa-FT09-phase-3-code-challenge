@@ -61,9 +61,9 @@ Write the following methods in the models(Article, Author, magazine) provided in
 
 - `Author __init__(self, id, name)`
   - Author is initialized with a name
-  - This initialization should create a new entry in the database `authors` table
 - `Author property id`
-  - Returns the id of the newly created `Author`
+  - Returns the   - This initialization should create a new entry in the database `authors` table
+id of the newly created `Author`
   - Names must be of type `int`
   - Remember to use the setter and getter method for easy retrieval, since this will be needed when creating `articles`
 - `Author property name`
